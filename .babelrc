@@ -1,0 +1,8 @@
+{
+    "presets": ["es2015", "react"],
+    "plugins": [
+        ["transform-import-css", {
+            "generateScopedName": "lib-[folder]-[name]-[local]-[hash:base64:4]"
+        }]
+    ]
+}
