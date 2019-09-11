@@ -6,6 +6,7 @@ import path from 'path';
 import {contentTypeDetector} from '../utils/content-type-detector';
 import {Button} from './button/Button';
 import {EmptyLine} from './EmptyLine/EmptyLine';
+import {Timer} from './Timer/Timer';
 
 export class MainPage extends Component {
     constructor() {
@@ -73,6 +74,10 @@ export class MainPage extends Component {
                 <EmptyLine />
                 <div>
                     <Button title="Неактивная кнопка" isBig disabled />
+                </div>
+                <EmptyLine />
+                <div>
+                    <Timer />
                 </div>
             </div>
         )

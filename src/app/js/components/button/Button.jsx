@@ -1,5 +1,3 @@
-'use babel';
-
 import React from 'react';
 import styles from './button.css';
 
@@ -20,5 +18,6 @@ export const Button = ({
     <button
         onClick={onClick}
         className={`${button_base} ${isBig ? button__big : button__regular} ${disabled ? button__disabled : button__enabled}`}
+        disabled={disabled}
     >{title}</button>
 );
